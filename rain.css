@@ -1,0 +1,27 @@
+.love-rain{
+    position: fixed;
+    top: -30px;
+    color: rgba(255, 0, 0, 0.6);
+    font-size: 18px;
+    font-family: cursive;
+    animation: fallLove 7s linear forwards;
+    z-index: 0;
+    white-space: nowrap;
+}
+
+@keyframes fallLove{
+    0%{
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(120vh) scale(1.4);
+        opacity: 0;
+    }
+}
+
+/* content hamesha upar rahe */
+body > *{
+    position: relative;
+    z-index: 5;
+}
